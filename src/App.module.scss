@@ -1,0 +1,13 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #3F425E;
+    color:  #ABABAB;
+    text-shadow: 2px 2px 4px black;
+}
+
+.Content {
+    flex-grow: 1;
+}
