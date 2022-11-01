@@ -22,7 +22,7 @@ export const getBooks = async (searchString, pageNum) => {
 			categories: [bookData.volumeInfo.categories],
 			image: bookData.volumeInfo.imageLinks
 				? bookData.volumeInfo.imageLinks.thumbnail
-				: "/images/noimage.png",
+				: "https://matt-pepper.github.io/google-books-search/images/noimage.png",
 			link: bookData.volumeInfo.previewLink,
 		};
 	});
