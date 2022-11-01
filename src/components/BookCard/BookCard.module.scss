@@ -1,0 +1,45 @@
+.Card {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	min-width: 260px;
+	width: 18%;
+	max-width: 350px;
+	margin: 15px;
+	background-color: white;
+	border-radius: 5px;
+	text-shadow: none;
+	color: black;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+
+	& * {
+		margin: 10px;
+		border-bottom: 2px solid #a17e64;
+	}
+}
+
+.Image {
+	height: 50%;
+}
+
+.Title {
+	//text-overflow: ellipsis;
+	//overflow: hidden;
+	//white-space: nowrap;
+}
+
+.Author {
+	color: #3f425e;
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.Description {
+	height: 65px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	border-bottom: none;
+}
