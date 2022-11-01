@@ -9,7 +9,7 @@ import PageContext from "../../contexts/PageContext/PageContext";
 const BookList = ({ searchTerm }) => {
 	const [bookArray, setBookArray] = useState([]);
 	const [bookCount, setBookCount] = useState(0);
-    const [page, setPage] = useContext(PageContext);
+	const [page, setPage] = useContext(PageContext);
 
 	useEffect(() => {
 		const getbookData = async () => {
@@ -21,14 +21,14 @@ const BookList = ({ searchTerm }) => {
 	}, [searchTerm, page]);
 
 	return (
-		<main >
-            <div className={style.Content}>
-            {bookCount > 0 && bookArray.map((book, index) => {
-                return <BookCard key={index} bookData={book} />
-            })}
-            </div>
-            {bookCount && <Pages bookCount={bookCount} />}
-			
+		<main>
+			<div className={style.Content}>
+				{bookCount > 0 &&
+					bookArray.map((book, index) => {
+						return <BookCard key={index} bookData={book} />;
+					})}
+			</div>
+			{bookCount && <Pages bookCount={bookCount} />}
 		</main>
 	);
 };
